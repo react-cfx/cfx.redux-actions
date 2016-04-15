@@ -1,0 +1,30 @@
+{
+  "name": "cfx.redux-actions",
+  "version": "0.0.0",
+  "description": "cfx.redux-actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-cfx/cfx.redux-actions.git"
+  },
+  "keywords": [
+    "cfx"
+  ],
+  "author": "FooTearth <footearth@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/react-cfx/cfx.redux-actions/issues"
+  },
+  "homepage": "https://github.com/react-cfx/cfx.redux-actions#readme",
+  "devDependencies": {
+    "ddeyes": "^0.0.1",
+    "shelljs": "^0.6.0"
+  },
+  "dependencies": {
+    "coffee-script": "^1.10.0",
+    "redux-actions": "^0.9.1"
+  }
+}
