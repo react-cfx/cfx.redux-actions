@@ -1,7 +1,7 @@
 reduxActions = require 'redux-actions'
 { createAction } = reduxActions
 
-module.exports = reduxActions
+exports.reduxActions = reduxActions
 exports.createActions = (config) ->
   actions = {}
   for k, v of config

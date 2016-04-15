@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "coffee-script": "^1.10.0",
-    "redux-actions": "^0.9.1"
+    "redux-actions": "^0.9.1",
+    "cfx.redux-types": "git+https://github.com/react-cfx/cfx.redux-types"
   }
 }

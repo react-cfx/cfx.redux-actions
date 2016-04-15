@@ -7,5 +7,20 @@ echo = log
 require 'shelljs/make'
 dd = require 'ddeyes'
 
+{
+  toActionsTypes
+} = require 'cfx.redux-types'
+
+{
+  createActions
+} = require '../index'
+
 target.all = ->
-  echo 'Hello World!'
+
+  { actions } = toActionsTypes { 'HELLO_WORLD' }
+
+  dd actions
+
+  { helloWorld } = createActions actions
+
+  dd helloWorld 'cfx'
