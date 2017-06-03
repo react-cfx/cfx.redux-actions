@@ -1,9 +1,22 @@
 reduxActions = require 'redux-actions'
 { createAction } = reduxActions
 
-exports.reduxActions = reduxActions
-exports.createActions = (config) ->
-  actions = {}
+dd = require 'ddeyes'
+echo = console.log
+
+createActions = (config) ->
+  actionMap = {}
+  identityActions = []
   for k, v of config
-    actions[k] = createAction v
-  actions
+    if typeof v is 'string'
+    then identityActions.push v
+    else actions[k] = v
+  reduxActions.createActions.apply @, [
+    actionMap
+    identityActions...
+  ]
+
+export default {
+  reduxActions
+  createActions
+}

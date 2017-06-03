@@ -22,12 +22,14 @@
   },
   "homepage": "https://github.com/react-cfx/cfx.redux-actions#readme",
   "devDependencies": {
-    "ddeyes": "^0.0.1",
-    "shelljs": "^0.6.0"
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "coffeescript": "next",
+    "ddeyes": "^0.0.4",
+    "shelljs": "^0.7.7"
   },
   "dependencies": {
-    "coffee-script": "^1.10.0",
-    "redux-actions": "^0.9.1",
-    "cfx.redux-types": "git+https://github.com/react-cfx/cfx.redux-types"
+    "cfx.redux-types": "git+https://github.com/react-cfx/cfx.redux-types",
+    "redux-actions": "^2.0.3"
   }
 }

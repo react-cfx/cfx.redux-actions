@@ -4,6 +4,7 @@
   error
 } = console
 echo = log
+
 require 'shelljs/make'
 dd = require 'ddeyes'
 
