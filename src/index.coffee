@@ -1,8 +1,5 @@
-reduxActions = require 'redux-actions'
+import reduxActions from 'redux-actions'
 { createAction } = reduxActions
-
-dd = require 'ddeyes'
-echo = console.log
 
 createActions = (config) ->
   actionMap = {}
@@ -16,7 +13,7 @@ createActions = (config) ->
     identityActions...
   ]
 
-export default {
+export {
   reduxActions
   createActions
 }
